@@ -5,7 +5,6 @@
 //  Created by Daniel Goldgamer on 10.06.20.
 //  Copyright © 2020 Daniel Goldgamer. All rights reserved.
 //
-
 import Cocoa
 
 @NSApplicationMain
@@ -122,7 +121,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         task.resume()
     }
     // MARK: - Core Data stack
-
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -151,7 +149,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving and Undo support
-
     @IBAction func saveAction(_ sender: AnyObject?) {
         // Performs the save action for the application, which is to send the save: message to the application's managed object context. Any encountered errors are presented to the user.
         let context = persistentContainer.viewContext
@@ -225,4 +222,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = menu
     }
 }
-
