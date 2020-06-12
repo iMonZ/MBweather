@@ -96,10 +96,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvQ-dL-ZLE">
+                            <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvQ-dL-ZLE" userLabel="City">
                                 <rect key="frame" x="213" y="121" width="77" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="push" title="Berlin" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="RHc-V5-ZJ2" id="FpX-XH-ilO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="6Pd-Zd-aQv"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Berlin" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="RHc-V5-ZJ2" id="FpX-XH-ilO" userLabel="City">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <menu key="menu" title="City" id="ZK4-eW-9zt">
@@ -110,18 +112,16 @@
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRe-kZ-ZYg">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRe-kZ-ZYg">
                                 <rect key="frame" x="73" y="203" width="357" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="MBWeather Settings" id="D32-bg-yNN">
                                     <font key="font" metaFont="system" size="40"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-Eg-yLe">
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-Eg-yLe">
                                 <rect key="frame" x="220" y="13" width="63" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EgC-8l-HCq">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -131,6 +131,16 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="CRe-kZ-ZYg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="75" id="BTk-Ts-dse"/>
+                            <constraint firstItem="CRe-kZ-ZYg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="DfQ-BE-9RP"/>
+                            <constraint firstItem="Ujd-Eg-yLe" firstAttribute="top" secondItem="CvQ-dL-ZLE" secondAttribute="bottom" constant="83" id="Fv4-rm-tSD"/>
+                            <constraint firstAttribute="bottom" secondItem="Ujd-Eg-yLe" secondAttribute="bottom" constant="20" symbolic="YES" id="LEC-XR-fCM"/>
+                            <constraint firstItem="CvQ-dL-ZLE" firstAttribute="top" secondItem="CRe-kZ-ZYg" secondAttribute="bottom" constant="58" id="TM5-ZN-Lcd"/>
+                            <constraint firstItem="CvQ-dL-ZLE" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="W0b-Ow-kiC"/>
+                            <constraint firstItem="CRe-kZ-ZYg" firstAttribute="centerX" secondItem="CvQ-dL-ZLE" secondAttribute="centerX" id="e2w-pb-SXa"/>
+                            <constraint firstItem="CvQ-dL-ZLE" firstAttribute="centerX" secondItem="Ujd-Eg-yLe" secondAttribute="centerX" id="qCQ-ML-mUl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

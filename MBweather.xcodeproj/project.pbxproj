@@ -14,10 +14,6 @@
 		3B3CD97D2491283D00B8E8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3CD97B2491283D00B8E8FA /* Main.storyboard */; };
 		3B3CD9892491283D00B8E8FA /* MBweatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3CD9882491283D00B8E8FA /* MBweatherTests.swift */; };
 		3B3CD9942491283D00B8E8FA /* MBweatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3CD9932491283D00B8E8FA /* MBweatherUITests.swift */; };
-		B6046CEB249352D5008A46BE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6046CEA249352D5008A46BE /* Package.swift */; };
-		B62617D02492D38B0096AE0D /* VCWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62617CF2492D38B0096AE0D /* VCWindowController.swift */; };
-		B62617D12492D38B0096AE0D /* VCWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62617CF2492D38B0096AE0D /* VCWindowController.swift */; };
-		B62617D22492D38B0096AE0D /* VCWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62617CF2492D38B0096AE0D /* VCWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +48,6 @@
 		3B3CD98F2491283D00B8E8FA /* MBweatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBweatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3CD9932491283D00B8E8FA /* MBweatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBweatherUITests.swift; sourceTree = "<group>"; };
 		3B3CD9952491283D00B8E8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6046CEA249352D5008A46BE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		B62617CF2492D38B0096AE0D /* VCWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +78,6 @@
 		3B3CD9662491283B00B8E8FA = {
 			isa = PBXGroup;
 			children = (
-				B6046CEA249352D5008A46BE /* Package.swift */,
 				3B3CD9712491283B00B8E8FA /* MBweather */,
 				3B3CD9872491283D00B8E8FA /* MBweatherTests */,
 				3B3CD9922491283D00B8E8FA /* MBweatherUITests */,
@@ -112,7 +105,6 @@
 				3B3CD97E2491283D00B8E8FA /* Info.plist */,
 				3B3CD97F2491283D00B8E8FA /* MBweather.entitlements */,
 				3B3CD9762491283B00B8E8FA /* MBweather.xcdatamodeld */,
-				B62617CF2492D38B0096AE0D /* VCWindowController.swift */,
 			);
 			path = MBweather;
 			sourceTree = "<group>";
@@ -265,8 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62617D02492D38B0096AE0D /* VCWindowController.swift in Sources */,
-				B6046CEB249352D5008A46BE /* Package.swift in Sources */,
 				3B3CD9752491283B00B8E8FA /* ViewController.swift in Sources */,
 				3B3CD9732491283B00B8E8FA /* AppDelegate.swift in Sources */,
 				3B3CD9782491283B00B8E8FA /* MBweather.xcdatamodeld in Sources */,
@@ -277,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62617D12492D38B0096AE0D /* VCWindowController.swift in Sources */,
 				3B3CD9892491283D00B8E8FA /* MBweatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62617D22492D38B0096AE0D /* VCWindowController.swift in Sources */,
 				3B3CD9942491283D00B8E8FA /* MBweatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
